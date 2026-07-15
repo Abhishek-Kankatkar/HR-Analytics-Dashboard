@@ -1,79 +1,87 @@
-# HR Analytics Dashboard
+# 📊 HR Analytics Dashboard
 
-## Overview
-
-This project analyzes employee attrition using **SQL, Python, and Power BI**. The objective is to identify workforce trends, uncover the key drivers of employee attrition, and generate actionable business insights to support data-driven HR decision-making.
+An end-to-end HR Analytics project built using **SQL, Python, and Power BI** to analyze employee attrition, workforce trends, and HR performance metrics. The project demonstrates the complete data analytics workflow, from data cleaning and exploratory analysis to interactive dashboard creation and business insight generation.
 
 ---
 
-## Tools & Technologies
+## 📌 Project Overview
+
+Employee attrition is a critical challenge for organizations, leading to increased hiring costs, productivity loss, and reduced employee morale. This project analyzes the IBM HR Analytics dataset to identify key factors influencing employee attrition and provides actionable insights to support data-driven HR decision-making.
+
+---
+
+## 🛠️ Tools & Technologies
 
 - SQL (MySQL)
-- Python (Pandas, Matplotlib, Seaborn)
+- Python
+- Pandas
+- Matplotlib
+- Seaborn
 - Power BI
 - Git & GitHub
 
 ---
 
-## Dataset
+## 📂 Dataset
 
 **IBM HR Analytics Employee Attrition Dataset**
 
-- **Total Records:** 1,470 Employees
-- **Features:**
+- Total Employees: **1,470**
+- Features: 35+
+- Includes:
   - Employee Demographics
   - Department
   - Job Role
+  - Attrition Status
   - Monthly Income
   - Overtime
-  - Attrition Status
-  - Education
   - Job Satisfaction
+  - Education
   - Performance Rating
-  - Workforce-related attributes
+  - Work Experience
 
 ---
 
-# Business Problem
+# 🚀 Project Workflow
 
-Employee attrition increases recruitment costs, reduces productivity, and impacts organizational performance. This project analyzes HR data to identify the major factors contributing to employee attrition and provides insights that can help HR teams improve employee retention.
+## 1️⃣ Data Cleaning
+
+- Validated dataset
+- Checked missing values
+- Removed inconsistencies
+- Prepared cleaned dataset for analysis
 
 ---
 
-# Project Workflow
-
-## 1. SQL Analysis
+## 2️⃣ SQL Analysis
 
 Performed SQL queries to analyze:
 
 - Total Employees
 - Attrition Count
 - Attrition Rate
-- Attrition by Department
-- Attrition by Job Role
-- Attrition by Overtime
+- Department-wise Attrition
+- Job Role Analysis
+- Overtime Analysis
 - Salary Analysis
-- Employee Demographics
+- Workforce Demographics
 
 ### Sample SQL Query
 
 ```sql
-SELECT
-    Department,
-    COUNT(*) AS Total_Employees,
-    SUM(CASE WHEN Attrition='Yes' THEN 1 ELSE 0 END) AS Attrition_Count
+SELECT Department,
+COUNT(*) AS TotalEmployees,
+SUM(CASE WHEN Attrition='Yes' THEN 1 ELSE 0 END) AS AttritionCount
 FROM hr_employee_attrition
 GROUP BY Department
-ORDER BY Attrition_Count DESC;
+ORDER BY AttritionCount DESC;
 ```
 
 ---
 
-## 2. Python Analysis
+## 3️⃣ Python Exploratory Data Analysis (EDA)
 
-Performed Exploratory Data Analysis (EDA) using Python.
-
-### Analysis Performed
+Performed:
 
 - Data Validation
 - Missing Value Analysis
@@ -82,13 +90,14 @@ Performed Exploratory Data Analysis (EDA) using Python.
 - Job Role Analysis
 - Overtime Analysis
 - Monthly Income Distribution
-- Data Visualization using Matplotlib
+- Age Distribution
+- Data Visualization using Matplotlib & Seaborn
 
 ---
 
-## 3. Power BI Dashboard
+## 4️⃣ Power BI Dashboard
 
-Designed an interactive HR Analytics Dashboard containing:
+Created an interactive HR Analytics Dashboard featuring:
 
 ### KPIs
 
@@ -97,7 +106,7 @@ Designed an interactive HR Analytics Dashboard containing:
 - Attrition Rate
 - Average Monthly Income
 
-### Dashboard Visualizations
+### Visualizations
 
 - Attrition by Department
 - Attrition by Job Role
@@ -108,56 +117,96 @@ Designed an interactive HR Analytics Dashboard containing:
 
 ---
 
-# Dashboard Preview
+# 📈 Dashboard Preview
 
-![HR Analytics Dashboard](dashboard%20.png)
+![HR Dashboard](dashboard.png)
 
 ---
 
-# Monthly Income Distribution
+# 📊 Python Visualizations
+
+## Attrition Count
+
+![Attrition Count](attrition_count.png)
+
+---
+
+## Attrition by Department
+
+![Attrition by Department](attrition_department.png)
+
+---
+
+## Attrition by Job Role
+
+![Attrition by Job Role](attrition_jobrole.png)
+
+---
+
+## Attrition by Overtime
+
+![Attrition by Overtime](attrition_overtime.png)
+
+---
+
+## Age Distribution
+
+![Age Distribution](age_distribution.png)
+
+---
+
+## Monthly Income Distribution
 
 ![Monthly Income Distribution](monthly_income_distribution.png)
 
 ---
 
-# Key Insights
+# 📌 Key Insights
 
-- Overall Attrition Rate: **16.12%**
-- Employees working overtime showed significantly higher attrition.
-- Research & Development and Sales departments experienced the highest employee turnover.
-- Certain job roles exhibited noticeably higher attrition rates.
-- Employees under 40 years of age accounted for the majority of attrition cases.
+- Overall employee attrition rate is **16.12%**.
+- Employees working overtime exhibit significantly higher attrition.
+- Research & Development and Sales departments experience the highest employee turnover.
+- Sales Executives and Laboratory Technicians show comparatively higher attrition.
+- Employees below the age of 40 account for the majority of attrition cases.
+- Lower monthly income is associated with higher employee turnover.
 
 ---
 
-# Business Recommendations
+# 💡 Business Recommendations
 
-- Reduce excessive overtime through better workforce planning.
-- Improve employee engagement in Sales and Research & Development departments.
-- Implement retention programs for high-risk job roles.
-- Review compensation strategies for lower-income employees.
+- Reduce excessive overtime through effective workforce planning.
+- Improve employee engagement programs for Sales and R&D departments.
+- Introduce career development initiatives for high-risk job roles.
 - Conduct regular employee satisfaction surveys.
+- Review compensation strategies for lower-income employees.
+- Develop retention programs targeting younger employees.
 
 ---
 
-# Project Structure
+# 📁 Project Structure
 
 ```
 HR-Analytics-Dashboard
 │
+├── HR_Employee_Attrition.csv
 ├── HR_Employee_Attrition_Cleaned.csv
-├── hr_employee_attrition.csv
 ├── hr_analysis.py
 ├── hr_analysis_queries.sql
-├── Power bi dashboard.pbix
-├── dashboard .png
+├── Power BI Dashboard.pbix
+├── dashboard.png
+├── attrition_count.png
+├── attrition_department.png
+├── attrition_jobrole.png
+├── attrition_overtime.png
+├── age_distribution.png
 ├── monthly_income_distribution.png
-└── README.md
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-# Installation
+# ⚙️ Installation
 
 Clone the repository
 
@@ -171,13 +220,13 @@ Navigate to the project directory
 cd HR-Analytics-Dashboard
 ```
 
-Install dependencies
+Install required packages
 
 ```bash
-pip install pandas matplotlib seaborn mysql-connector-python
+pip install -r requirements.txt
 ```
 
-Run the Python script
+Run the Python analysis
 
 ```bash
 python hr_analysis.py
@@ -185,30 +234,34 @@ python hr_analysis.py
 
 ---
 
-# Skills Demonstrated
+# 🧠 Skills Demonstrated
 
 - SQL Querying
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
+- Statistical Analysis
 - Data Visualization
-- Power BI Dashboard Development
+- Dashboard Development
 - Business Intelligence
+- Power BI Reporting
+- Business Insights
 - Data Analytics
-- Business Insights Generation
+- Git Version Control
 
 ---
 
-# Future Improvements
+# 🔮 Future Improvements
 
-- Predict employee attrition using Machine Learning.
-- Deploy dashboard using Power BI Service.
-- Build an automated ETL pipeline.
-- Add employee segmentation and forecasting.
-- Integrate real-time HR data sources.
+- Employee Attrition Prediction using Machine Learning
+- Employee Retention Forecasting
+- Interactive Power BI Filters
+- Automated ETL Pipeline
+- Power BI Service Deployment
+- Real-time HR Analytics Dashboard
 
 ---
 
-# Author
+# 👨‍💻 Author
 
 ## Abhishek Kankatkar
 
@@ -220,13 +273,18 @@ python hr_analysis.py
 - Python
 - Power BI
 - Excel
+- Pandas
 - Data Visualization
-- Data Analytics
+- Business Intelligence
 
 ---
 
-## Connect With Me
+## 📬 Connect With Me
 
-**GitHub:** https://github.com/YOUR_USERNAME
+**GitHub:** https://github.com/YOUR_GITHUB_USERNAME
 
-**LinkedIn:** https://www.linkedin.com/in/YOUR_LINKEDIN
+**LinkedIn:** https://www.linkedin.com/in/YOUR_LINKEDIN_USERNAME
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
