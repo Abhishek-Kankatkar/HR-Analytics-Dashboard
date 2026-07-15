@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project analyzes employee attrition using **SQL, Python, and Power BI**. The objective is to identify workforce trends, understand the key drivers of employee attrition, and generate actionable business insights that support data-driven HR decision-making.
+This project analyzes employee attrition using **SQL, Python, and Power BI**. The objective is to identify workforce trends, uncover the key drivers of employee attrition, and generate actionable business insights to support data-driven HR decision-making.
 
 ---
 
@@ -19,8 +19,8 @@ This project analyzes employee attrition using **SQL, Python, and Power BI**. Th
 
 **IBM HR Analytics Employee Attrition Dataset**
 
-- Total Records: **1,470 Employees**
-- Features:
+- **Total Records:** 1,470 Employees
+- **Features:**
   - Employee Demographics
   - Department
   - Job Role
@@ -30,7 +30,13 @@ This project analyzes employee attrition using **SQL, Python, and Power BI**. Th
   - Education
   - Job Satisfaction
   - Performance Rating
-  - And other HR-related attributes
+  - Workforce-related attributes
+
+---
+
+# Business Problem
+
+Employee attrition increases recruitment costs, reduces productivity, and impacts organizational performance. This project analyzes HR data to identify the major factors contributing to employee attrition and provides insights that can help HR teams improve employee retention.
 
 ---
 
@@ -38,14 +44,14 @@ This project analyzes employee attrition using **SQL, Python, and Power BI**. Th
 
 ## 1. SQL Analysis
 
-Performed SQL queries to analyze HR metrics including:
+Performed SQL queries to analyze:
 
 - Total Employees
 - Attrition Count
 - Attrition Rate
-- Department-wise Attrition
-- Job Role Analysis
-- Overtime Analysis
+- Attrition by Department
+- Attrition by Job Role
+- Attrition by Overtime
 - Salary Analysis
 - Employee Demographics
 
@@ -67,7 +73,7 @@ ORDER BY Attrition_Count DESC;
 
 Performed Exploratory Data Analysis (EDA) using Python.
 
-Analysis includes:
+### Analysis Performed
 
 - Data Validation
 - Missing Value Analysis
@@ -75,14 +81,14 @@ Analysis includes:
 - Department Analysis
 - Job Role Analysis
 - Overtime Analysis
-- Salary Distribution
-- Data Visualization using Matplotlib & Seaborn
+- Monthly Income Distribution
+- Data Visualization using Matplotlib
 
 ---
 
 ## 3. Power BI Dashboard
 
-Designed an interactive HR Analytics Dashboard featuring:
+Designed an interactive HR Analytics Dashboard containing:
 
 ### KPIs
 
@@ -91,56 +97,24 @@ Designed an interactive HR Analytics Dashboard featuring:
 - Attrition Rate
 - Average Monthly Income
 
-### Visualizations
+### Dashboard Visualizations
 
 - Attrition by Department
 - Attrition by Job Role
 - Attrition by Overtime
 - Attrition by Gender
 - Attrition by Age Group
-- Income Distribution
+- Monthly Income Distribution
 
 ---
 
 # Dashboard Preview
 
-![Dashboard](dashboard.png)
+![HR Analytics Dashboard](dashboard%20.png)
 
 ---
 
-# Python Visualizations
-
-## Attrition Count
-
-![Attrition Count](attrition_count.png)
-
----
-
-## Attrition by Department
-
-![Department Analysis](attrition_department.png)
-
----
-
-## Attrition by Job Role
-
-![Job Role Analysis](attrition_jobrole.png)
-
----
-
-## Attrition by Overtime
-
-![Overtime Analysis](attrition_overtime.png)
-
----
-
-## Age Distribution
-
-![Age Distribution](age_distribution.png)
-
----
-
-## Monthly Income Distribution
+# Monthly Income Distribution
 
 ![Monthly Income Distribution](monthly_income_distribution.png)
 
@@ -149,20 +123,20 @@ Designed an interactive HR Analytics Dashboard featuring:
 # Key Insights
 
 - Overall Attrition Rate: **16.12%**
-- Employees working overtime experienced significantly higher attrition.
-- Research & Development and Sales departments recorded the highest employee turnover.
-- Certain job roles exhibited considerably higher attrition than others.
-- Employees below the age of 40 accounted for the majority of attrition cases.
+- Employees working overtime showed significantly higher attrition.
+- Research & Development and Sales departments experienced the highest employee turnover.
+- Certain job roles exhibited noticeably higher attrition rates.
+- Employees under 40 years of age accounted for the majority of attrition cases.
 
 ---
 
 # Business Recommendations
 
-- Reduce excessive overtime through improved workforce planning.
-- Focus retention programs on Sales and Research & Development departments.
-- Improve employee engagement for high-risk job roles.
-- Monitor younger employees using regular engagement surveys.
+- Reduce excessive overtime through better workforce planning.
+- Improve employee engagement in Sales and Research & Development departments.
+- Implement retention programs for high-risk job roles.
 - Review compensation strategies for lower-income employees.
+- Conduct regular employee satisfaction surveys.
 
 ---
 
@@ -171,20 +145,14 @@ Designed an interactive HR Analytics Dashboard featuring:
 ```
 HR-Analytics-Dashboard
 │
-├── HR_Employee_Attrition.csv
 ├── HR_Employee_Attrition_Cleaned.csv
+├── hr_employee_attrition.csv
 ├── hr_analysis.py
 ├── hr_analysis_queries.sql
-├── HR_Analytics_Dashboard.pbix
-├── dashboard.png
-├── attrition_count.png
-├── attrition_department.png
-├── attrition_jobrole.png
-├── attrition_overtime.png
-├── age_distribution.png
+├── Power bi dashboard.pbix
+├── dashboard .png
 ├── monthly_income_distribution.png
-├── README.md
-└── requirements.txt
+└── README.md
 ```
 
 ---
@@ -194,7 +162,7 @@ HR-Analytics-Dashboard
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/HR-Analytics-Dashboard.git
+git clone https://github.com/YOUR_USERNAME/HR-Analytics-Dashboard.git
 ```
 
 Navigate to the project directory
@@ -206,10 +174,10 @@ cd HR-Analytics-Dashboard
 Install dependencies
 
 ```bash
-pip install -r requirements.txt
+pip install pandas matplotlib seaborn mysql-connector-python
 ```
 
-Run the Python analysis
+Run the Python script
 
 ```bash
 python hr_analysis.py
@@ -223,29 +191,28 @@ python hr_analysis.py
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
 - Data Visualization
-- Dashboard Development
-- Power BI Reporting
+- Power BI Dashboard Development
 - Business Intelligence
 - Data Analytics
-- Business Insight Generation
+- Business Insights Generation
 
 ---
 
 # Future Improvements
 
-- Employee Attrition Prediction using Machine Learning
-- Power BI Service Deployment
-- Automated ETL Pipeline
-- Employee Segmentation
-- HR KPI Forecasting
+- Predict employee attrition using Machine Learning.
+- Deploy dashboard using Power BI Service.
+- Build an automated ETL pipeline.
+- Add employee segmentation and forecasting.
+- Integrate real-time HR data sources.
 
 ---
 
 # Author
 
-**Abhishek Kankatkar**
+## Abhishek Kankatkar
 
-Aspiring Data Analyst
+**Aspiring Data Analyst**
 
 ### Skills
 
@@ -258,8 +225,8 @@ Aspiring Data Analyst
 
 ---
 
-## Connect with Me
+## Connect With Me
 
-**LinkedIn:** https://www.linkedin.com/in/your-linkedin
+**GitHub:** https://github.com/YOUR_USERNAME
 
-**GitHub:** https://github.com/your-github
+**LinkedIn:** https://www.linkedin.com/in/YOUR_LINKEDIN
