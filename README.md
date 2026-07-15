@@ -102,7 +102,7 @@ HR-Analytics-Dashboard
 
 ## Author
 
-**Nishal Chhetri**
+**Abhishek Kankatkar**
 
 Aspiring Data Analyst
 
