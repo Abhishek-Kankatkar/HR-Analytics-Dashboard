@@ -108,6 +108,4 @@ Aspiring Data Analyst
 
 Skills: SQL | Python | Power BI | Excel | Data Visualization
 
-LinkedIn: Add your LinkedIn profile link here
 
-GitHub: Add your GitHub profile link here
