@@ -1,7 +1,7 @@
 # HR Analytics Dashboard
 
 ## Overview
-This project analyzes employee attrition using SQL, Python, and Power BI. The objective is to identify workforce trends, attrition drivers, and key HR metrics to support data-driven decision making.
+This project analyzes employee attrition using SQL, Python, and Power BI. The objective is to identify workforce trends, attrition drivers, and key HR metrics that support data-driven decision making.
 
 ## Tools & Technologies
 - SQL (MySQL)
@@ -19,8 +19,9 @@ IBM HR Analytics Employee Attrition Dataset
 
 ## Project Workflow
 
-### SQL Analysis
+### 1. SQL Analysis
 Performed data analysis using SQL queries to:
+
 - Calculate Total Employees
 - Calculate Attrition Count
 - Calculate Attrition Rate
@@ -30,8 +31,9 @@ Performed data analysis using SQL queries to:
 - Perform Salary Analysis
 - Analyze Workforce Demographics
 
-### Python Analysis
+### 2. Python Analysis
 Used Python for Exploratory Data Analysis (EDA):
+
 - Data Validation
 - Missing Value Analysis
 - Attrition Trend Analysis
@@ -40,8 +42,8 @@ Used Python for Exploratory Data Analysis (EDA):
 - Overtime Analysis
 - Data Visualization using Matplotlib and Seaborn
 
-### Power BI Dashboard
-Built an interactive HR Analytics Dashboard containing:
+### 3. Power BI Dashboard
+Built an interactive dashboard containing:
 
 #### KPIs
 - Total Employees
@@ -59,11 +61,12 @@ Built an interactive HR Analytics Dashboard containing:
 ---
 
 ## Key Insights
+
 - Overall Attrition Rate: **16.12%**
 - Employees working overtime showed significantly higher attrition.
 - Research & Development and Sales departments experienced the highest employee turnover.
 - Certain job roles showed noticeably higher attrition rates.
-- Employees below 40 years of age accounted for the majority of attrition cases.
+- Employees under 40 accounted for the majority of attrition cases.
 
 ---
 
@@ -73,22 +76,49 @@ Built an interactive HR Analytics Dashboard containing:
 
 ---
 
+## Python Visualizations
+
+### Attrition Count
+![Attrition Count](attrition_count.png)
+
+### Attrition by Department
+![Attrition by Department](attrition_department.png)
+
+### Attrition by Job Role
+![Attrition by Job Role](attrition_jobrole.png)
+
+### Attrition by Overtime
+![Attrition by Overtime](attrition_overtime.png)
+
+### Age Distribution
+![Age Distribution](age_distribution.png)
+
+---
+
 ## Project Structure
 
 ```text
 HR-Analytics-Dashboard
 │
+├── HR_Employee_Attrition.csv
 ├── HR_Employee_Attrition_Cleaned.csv
 ├── hr_analysis.py
 ├── hr_analysis_queries.sql
 ├── HR_Analytics_Dashboard.pbix
 ├── dashboard.png
+├── attrition_count.png
+├── attrition_department.png
+├── attrition_jobrole.png
+├── attrition_overtime.png
+├── age_distribution.png
+├── monthly_income_distribution.png
 └── README.md
 ```
 
 ---
 
 ## Skills Demonstrated
+
 - SQL Querying
 - Data Cleaning
 - Exploratory Data Analysis (EDA)
@@ -106,6 +136,7 @@ HR-Analytics-Dashboard
 
 Aspiring Data Analyst
 
-Skills: SQL | Python | Power BI | Excel | Data Visualization
+**Skills:** SQL | Python | Power BI | Excel | Data Visualization
+
 
 
